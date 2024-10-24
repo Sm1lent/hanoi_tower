@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <p id="gameover">Башня перестроена. Спасибо за внимание (:</p>
+    
+    <form class="container form" id="form">
+      <label class="label">
+        <span>Высота башни (кол-во колец): </span>
+        <input type="number" id="start-number" value="8" min="1" max="20">
+      </label>
+      <label class="label">
+        <span>Пауза между итерациями (в мс):</span>
+        <input type="number" id="tick" value="250" min="0" max="3000">
+      </label>
+
+      <button class="button" type="submit">Старт</button>
+    </form>
+
+    <div class="container tower-container">      
+      <div class="tower" id="tower1">
+        <div class="brick_base"></div>
+      </div>
+      <div class="tower" id="tower2">
+        <div class="brick_base"></div>
+      </div>
+      <div class="tower" id="tower3">
+        <div class="brick_base"></div>
+      </div>
+    </div>
+    <div id="moves" class="container">
+      <p>Сделано ходов:  <span id="moves-count">0</span></p>
+      <button class="button hidden" id="stop">Остановить</button>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
