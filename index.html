@@ -5,24 +5,25 @@
     <link rel="icon" type="image/svg+xml" href="./vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + TS</title>
-    <script type="module" crossorigin src="./assets/index-VW-4vW-5.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-BBD3NmIA.css">
+    <script type="module" crossorigin src="assets/index-D57Y7PJe.js"></script>
+    <link rel="stylesheet" crossorigin href="assets/index-CL7D0KRV.css">
   </head>
   <body>
-    <p id="gameover">Башня перестроена. Спасибо за внимание (:</p>
-    
-    <form class="container form" id="form">
-      <label class="label">
-        <span>Высота башни (кол-во колец): </span>
-        <input type="number" id="start-number" value="8" min="1" max="20">
-      </label>
-      <label class="label">
-        <span>Пауза между итерациями (в мс):</span>
-        <input type="number" id="tick" value="250" min="0" max="3000">
-      </label>
-
-      <button class="button" type="submit">Старт</button>
-    </form>
+    <div class="container container_top">
+      <p id="gameover">Башня перестроена. Спасибо за внимание (:</p>
+      <form class="form" id="form">
+        <label class="label">
+          <span>Высота башни (кол-во колец): </span>
+          <input type="number" id="start-number" value="8" min="3" max="20">
+        </label>
+        <label class="label">
+          <span>Пауза между итерациями (в мс):</span>
+          <input type="number" id="tick" value="250" min="0" max="3000">
+        </label>
+  
+        <button class="button" type="submit">Старт</button>
+      </form>
+    </div>
 
     <div class="container tower-container">      
       <div class="tower" id="tower1">
@@ -39,5 +40,6 @@
       <p>Сделано ходов:  <span id="moves-count">0</span></p>
       <button class="button hidden" id="stop">Остановить</button>
     </div>
+
   </body>
 </html>
