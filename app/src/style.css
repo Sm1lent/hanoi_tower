@@ -34,6 +34,10 @@ body {
   padding: 2rem;
 }
 
+.container_top {
+  margin-bottom: auto;
+}
+
 .tower-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -86,7 +90,6 @@ body {
 }
 
 #gameover {
-  margin-bottom: auto;
   text-align: center;
   font-size: 32px;
   -webkit-transition: opacity 0.35s ease-in-out;

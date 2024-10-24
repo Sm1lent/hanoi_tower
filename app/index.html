@@ -7,20 +7,21 @@
     <title>Vite + TS</title>
   </head>
   <body>
-    <p id="gameover">Башня перестроена. Спасибо за внимание (:</p>
-    
-    <form class="container form" id="form">
-      <label class="label">
-        <span>Высота башни (кол-во колец): </span>
-        <input type="number" id="start-number" value="8" min="1" max="20">
-      </label>
-      <label class="label">
-        <span>Пауза между итерациями (в мс):</span>
-        <input type="number" id="tick" value="250" min="0" max="3000">
-      </label>
-
-      <button class="button" type="submit">Старт</button>
-    </form>
+    <div class="container container_top">
+      <p id="gameover">Башня перестроена. Спасибо за внимание (:</p>
+      <form class="form" id="form">
+        <label class="label">
+          <span>Высота башни (кол-во колец): </span>
+          <input type="number" id="start-number" value="8" min="3" max="20">
+        </label>
+        <label class="label">
+          <span>Пауза между итерациями (в мс):</span>
+          <input type="number" id="tick" value="250" min="0" max="3000">
+        </label>
+  
+        <button class="button" type="submit">Старт</button>
+      </form>
+    </div>
 
     <div class="container tower-container">      
       <div class="tower" id="tower1">

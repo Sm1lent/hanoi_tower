@@ -40,8 +40,8 @@ const game = {
 
 formElement.addEventListener('submit', (e) => {
   e.preventDefault();
-  game.startNumber = Number(towerHeightInput.value);
-  game.tick = Number(tickInput.value);
+  game.startNumber = Number(towerHeightInput.value) > 2 ? Number(towerHeightInput.value) : 3;
+  game.tick = Number(tickInput.value) >= 0 ? Number(tickInput.value) : 0;
   formElement.classList.add('hidden');
   stopButton.classList.remove('hidden');
   game.start();
